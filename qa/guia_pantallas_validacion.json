@@ -1,0 +1,16 @@
+{
+  "screens": 11,
+  "keyboard": "passed",
+  "history": "passed",
+  "progress": "passed",
+  "mobile": "passed",
+  "copy_block": "passed",
+  "console_errors": [],
+  "contrast_ratios": {
+    "ffffff/125d78": 7.34,
+    "465e6d/f4f7f8": 6.33,
+    "123f50/dcebf0": 9.28,
+    "142c3b/ffffff": 14.45
+  },
+  "limits": "Sin prueba con lector de pantalla; contraste medido en paleta principal."
+}

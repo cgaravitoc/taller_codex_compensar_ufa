@@ -1,0 +1,4 @@
+.python_deps/
+tmp/
+scripts/node_modules/
+__pycache__/

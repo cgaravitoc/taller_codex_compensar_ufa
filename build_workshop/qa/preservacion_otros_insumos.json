@@ -1,0 +1,8 @@
+{
+  "sin_cambios": true,
+  "sha256": {
+    "clientes.xlsx": "c15338180e6d73673d1139b1489ab17fef185bdcc8785c9508eefcf849a03e5f",
+    "centrales_riesgo.csv": "2f3de8f9250444d8801912daac16aa984d2ecb17a3c702be23eabddaba5d0a3c",
+    "observacion_fraude.txt": "4ba7067b90994ff2126ddcc8e9487ab04533f22f64fb608459b50af7e24c1f22"
+  }
+}

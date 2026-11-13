@@ -1,0 +1,8 @@
+{
+  "reaplicacion_identica": true,
+  "sha256": {
+    "build_workshop\\data\\transacciones.parquet": "a0849f38b6b8dda1e42b65516553c9ffadbe46db07de1ac4a3a2fe4b0b270af3",
+    "build_workshop\\data_dict\\transacciones.json": "6fd18b7b55d89d5e126e94fd021b82ae18f6a04b6e339e84bf46685547d84de2",
+    "build_workshop\\data_dict\\transacciones.md": "600cc247f55e75f054c4149e8aefd27dc770c03fd11f99051d20c5e886398d5d"
+  }
+}

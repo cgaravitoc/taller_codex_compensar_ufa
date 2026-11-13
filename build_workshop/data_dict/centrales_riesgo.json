@@ -1,0 +1,164 @@
+[
+  {
+    "campo": "id_cliente",
+    "tipo": "str",
+    "descripcion": "Cliente al que pertenece el corte.",
+    "dominio": "FK clientes.id_cliente"
+  },
+  {
+    "campo": "fecha_corte",
+    "tipo": "datetime64[us]",
+    "descripcion": "Corte del buro disponible al inicio del periodo.",
+    "dominio": "2025-12-30"
+  },
+  {
+    "campo": "score_crediticio",
+    "tipo": "int64",
+    "descripcion": "Puntaje crediticio ficticio; no reproduce una central real.",
+    "dominio": "300..950"
+  },
+  {
+    "campo": "antiguedad_crediticia_meses",
+    "tipo": "int64",
+    "descripcion": "Meses desde la primera obligacion.",
+    "dominio": "meses; positivo"
+  },
+  {
+    "campo": "numero_obligaciones_activas",
+    "tipo": "int64",
+    "descripcion": "Obligaciones activas en todas las entidades.",
+    "dominio": "2..11"
+  },
+  {
+    "campo": "numero_obligaciones_cerradas",
+    "tipo": "int64",
+    "descripcion": "Obligaciones cerradas acumuladas.",
+    "dominio": "entero >=0"
+  },
+  {
+    "campo": "numero_tarjetas_credito",
+    "tipo": "int64",
+    "descripcion": "Tarjetas en todas las entidades, incluida la del caso.",
+    "dominio": "1..5; <= obligaciones activas"
+  },
+  {
+    "campo": "numero_creditos_consumo",
+    "tipo": "int64",
+    "descripcion": "Otras obligaciones activas, simplificadas como consumo.",
+    "dominio": "entero >=0"
+  },
+  {
+    "campo": "saldo_total_deuda_cop",
+    "tipo": "float64",
+    "descripcion": "Saldo de todas las obligaciones activas.",
+    "dominio": "COP >=0"
+  },
+  {
+    "campo": "saldo_rotativo_cop",
+    "tipo": "float64",
+    "descripcion": "Saldo utilizado en tarjetas de todas las entidades.",
+    "dominio": "COP >=0"
+  },
+  {
+    "campo": "cupo_total_tarjetas_cop",
+    "tipo": "float64",
+    "descripcion": "Suma de cupos de todas las tarjetas.",
+    "dominio": "COP >0"
+  },
+  {
+    "campo": "utilizacion_cupo_tarjetas",
+    "tipo": "float64",
+    "descripcion": "Saldo rotativo dividido entre cupo total.",
+    "dominio": "proporcion 0..1"
+  },
+  {
+    "campo": "cuota_mensual_total_cop",
+    "tipo": "float64",
+    "descripcion": "Cuotas mensuales estimadas de todas las obligaciones.",
+    "dominio": "COP >=0"
+  },
+  {
+    "campo": "obligaciones_mora_30d",
+    "tipo": "int64",
+    "descripcion": "Obligaciones activas con al menos 30 dias de mora al corte.",
+    "dominio": "entero; >= mora 60d"
+  },
+  {
+    "campo": "obligaciones_mora_60d",
+    "tipo": "int64",
+    "descripcion": "Obligaciones activas con al menos 60 dias de mora al corte.",
+    "dominio": "entero; >= mora 90d"
+  },
+  {
+    "campo": "obligaciones_mora_90d",
+    "tipo": "int64",
+    "descripcion": "Obligaciones activas con al menos 90 dias de mora al corte.",
+    "dominio": "entero >=0"
+  },
+  {
+    "campo": "max_dias_mora_12m",
+    "tipo": "int64",
+    "descripcion": "Mayor mora observada durante los 12 meses previos al corte.",
+    "dominio": "dias 0..180"
+  },
+  {
+    "campo": "eventos_mora_12m",
+    "tipo": "int64",
+    "descripcion": "Episodios de mora de al menos 30 dias en los ultimos 12 meses.",
+    "dominio": "entero >=0"
+  },
+  {
+    "campo": "consultas_buro_1m",
+    "tipo": "int64",
+    "descripcion": "Consultas en el mes previo al corte.",
+    "dominio": "entero >=0"
+  },
+  {
+    "campo": "consultas_buro_3m",
+    "tipo": "int64",
+    "descripcion": "Consultas en los 3 meses previos; incluye 1m.",
+    "dominio": "entero >= consultas 1m"
+  },
+  {
+    "campo": "consultas_buro_6m",
+    "tipo": "int64",
+    "descripcion": "Consultas en los 6 meses previos; incluye 3m.",
+    "dominio": "entero >= consultas 3m"
+  },
+  {
+    "campo": "obligaciones_abiertas_6m",
+    "tipo": "int64",
+    "descripcion": "Obligaciones activas abiertas durante los 6 meses previos.",
+    "dominio": "entero <= obligaciones activas"
+  },
+  {
+    "campo": "obligaciones_reestructuradas",
+    "tipo": "int64",
+    "descripcion": "Obligaciones activas reestructuradas.",
+    "dominio": "entero <= obligaciones activas"
+  },
+  {
+    "campo": "obligaciones_castigadas_historicas",
+    "tipo": "int64",
+    "descripcion": "Obligaciones castigadas historicamente, fuera de saldos activos.",
+    "dominio": "entero >=0"
+  },
+  {
+    "campo": "saldo_en_mora_cop",
+    "tipo": "float64",
+    "descripcion": "Saldo en mora asociado a obligaciones con mora de al menos 30 dias.",
+    "dominio": "COP >=0; <= saldo total"
+  },
+  {
+    "campo": "proporcion_pagos_puntuales_12m",
+    "tipo": "float64",
+    "descripcion": "Proporcion de pagos puntuales en los 12 meses previos.",
+    "dominio": "proporcion 0..1"
+  },
+  {
+    "campo": "meses_desde_ultima_mora",
+    "tipo": "float64",
+    "descripcion": "Meses desde ultima mora >=30 dias; vacio indica sin mora registrada.",
+    "dominio": "meses >=0; vacio = sin historial de mora"
+  }
+]

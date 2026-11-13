@@ -1,0 +1,151 @@
+{
+  "resultado": "OK_CONTRATO_DIDACTICO_CON_DEFECTOS_INTENCIONALES",
+  "semilla": 20261113,
+  "controles": {
+    "crudo_200000_filas_23_columnas": true,
+    "llaves_e_instante_y_campos_no_intervenidos_intactos": true,
+    "defecto_esperado_montos_no_numericos": true,
+    "defecto_esperado_montos_extremos_mayores_100_millones": true,
+    "defecto_esperado_montos_negativos": true,
+    "defecto_esperado_montos_cero": true,
+    "defecto_esperado_fechas_no_iso_validas": true,
+    "defecto_esperado_horas_invalidas": true,
+    "defecto_esperado_canales_fuera_catalogo": true,
+    "defecto_esperado_latencia_nulos": true,
+    "defecto_esperado_sdk_nulos": true,
+    "defecto_esperado_sistema_origen_mayoritario": true,
+    "defecto_esperado_reintento_valor_mayoritario": true,
+    "canales_recuperables": true,
+    "bitacora_12000_celdas_sin_duplicados": true,
+    "bitacora_valores_monto_cop": true,
+    "bitacora_original_monto_cop": true,
+    "celdas_no_intervenidas_monto_cop": true,
+    "bitacora_valores_fecha": true,
+    "bitacora_original_fecha": true,
+    "celdas_no_intervenidas_fecha": true,
+    "bitacora_valores_hora": true,
+    "bitacora_original_hora": true,
+    "celdas_no_intervenidas_hora": true,
+    "bitacora_valores_canal": true,
+    "bitacora_original_canal": true,
+    "celdas_no_intervenidas_canal": true,
+    "5000_clientes": true,
+    "buro_25_variables": true,
+    "200000_transacciones": true,
+    "seguimiento_completo": true,
+    "tasa_fraude_exacta": true,
+    "llaves_clientes": true,
+    "tarjeta_corresponde_cliente": true,
+    "perfil_previo": true,
+    "buro_previo": true,
+    "periodo_compras": true,
+    "fechas_horas_consistentes": true,
+    "montos_y_cupos": true,
+    "compras_internacionales_habilitadas": true,
+    "categorias_comercios_estables": true,
+    "dispositivo_solo_digital": true,
+    "autenticacion_3ds": true,
+    "buro_saldos": true,
+    "buro_utilizacion": true,
+    "buro_moras_anidadas": true,
+    "buro_consultas_anidadas": true,
+    "buro_obligaciones": true,
+    "ultima_mora_coherente": true,
+    "cuatro_insumos": true,
+    "cierres_maduros": true,
+    "reportes_ordenados": true,
+    "ventana_45_dias": true,
+    "etiquetas_estados": true,
+    "perdidas_validas": true,
+    "sin_objetivo_en_predictores": true,
+    "faltantes_didacticos": true,
+    "diccionario_completo_clientes": true,
+    "nulos_documentados_clientes": true,
+    "diccionario_completo_centrales_riesgo": true,
+    "nulos_documentados_centrales_riesgo": true,
+    "diccionario_completo_transacciones": true,
+    "nulos_documentados_transacciones": true,
+    "diccionario_completo_observacion_fraude": true,
+    "nulos_documentados_observacion_fraude": true
+  },
+  "calidad_cruda": {
+    "estado": "DEFECTOS_INTENCIONALES_VERIFICADOS_NO_APTO_PARA_MODELAR_SIN_LIMPIEZA",
+    "filas": 200000,
+    "columnas": 23,
+    "semilla_calidad": 20261114,
+    "conteos": {
+      "montos_no_numericos": 4000,
+      "montos_extremos_mayores_100_millones": 1000,
+      "montos_negativos": 500,
+      "montos_cero": 500,
+      "fechas_no_iso_validas": 3000,
+      "horas_invalidas": 1000,
+      "canales_fuera_catalogo": 2000,
+      "latencia_nulos": 170000,
+      "sdk_nulos": 190000,
+      "sistema_origen_mayoritario": 199000,
+      "reintento_valor_mayoritario": 199800
+    },
+    "porcentajes": {
+      "montos_no_numericos": 2.0,
+      "montos_extremos_mayores_100_millones": 0.5,
+      "montos_negativos": 0.25,
+      "montos_cero": 0.25,
+      "fechas_no_iso_validas": 1.5,
+      "horas_invalidas": 0.5,
+      "canales_fuera_catalogo": 1.0,
+      "latencia_nulos": 85.0,
+      "sdk_nulos": 95.0,
+      "sistema_origen_mayoritario": 99.5,
+      "reintento_valor_mayoritario": 99.9
+    },
+    "celdas_modificadas_en_columnas_existentes": 12000,
+    "filas_con_modificaciones_en_columnas_existentes": 11764,
+    "referencia_facilitador": "qa/facilitador/transacciones_original.parquet",
+    "nota": "Los controles de negocio originales se ejecutan sobre la referencia limpia. El crudo contiene los defectos listados."
+  },
+  "filas": {
+    "clientes": 5000,
+    "centrales_riesgo": 5000,
+    "transacciones": 200000,
+    "observacion_fraude": 200000
+  },
+  "fraudes": 50000,
+  "tasa_fraude": 0.25,
+  "estados": {
+    "SIN_REPORTE_VENTANA_CERRADA": 135105,
+    "FRAUDE_CONFIRMADO": 50000,
+    "DESCARTADO": 14895
+  },
+  "tasas_por_canal": {
+    "APP": 0.31316583917566926,
+    "POS": 0.18711127161831387,
+    "WEB": 0.3120444924047481
+  },
+  "tasas_por_mes": {
+    "2026-01": 0.29713114754098363,
+    "2026-02": 0.2518838152894957,
+    "2026-03": 0.2387244538407329,
+    "2026-04": 0.2368586764220816,
+    "2026-05": 0.23723398018408864,
+    "2026-06": 0.23765292932936544
+  },
+  "archivos": {
+    "centrales_riesgo.csv": {
+      "bytes": 645910,
+      "sha256": "2f3de8f9250444d8801912daac16aa984d2ecb17a3c702be23eabddaba5d0a3c"
+    },
+    "clientes.xlsx": {
+      "bytes": 339344,
+      "sha256": "c15338180e6d73673d1139b1489ab17fef185bdcc8785c9508eefcf849a03e5f"
+    },
+    "observacion_fraude.txt": {
+      "bytes": 20880663,
+      "sha256": "4ba7067b90994ff2126ddcc8e9487ab04533f22f64fb608459b50af7e24c1f22"
+    },
+    "transacciones.parquet": {
+      "bytes": 7775843,
+      "sha256": "a0849f38b6b8dda1e42b65516553c9ffadbe46db07de1ac4a3a2fe4b0b270af3"
+    }
+  }
+}

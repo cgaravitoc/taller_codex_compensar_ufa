@@ -1,0 +1,38 @@
+{
+  "entregables": {
+    "guia/index.html": {
+      "bytes": 35659,
+      "sha256": "a41c8d405fdf695d94760609832f1ace7b7a741229dabc572d9c10d348b581ea"
+    },
+    "reports/reporte_fraude.html": {
+      "bytes": 9740876,
+      "sha256": "387fc130b1fce4ccdd7f31cdd06cb71439b40e07cc46c7ecf19a77db13a92d8c"
+    },
+    "notebooks/01_integracion_limpieza_eda.ipynb": {
+      "bytes": 143318,
+      "sha256": "ddbdda67127244a7bc252238640b287202bc5eb1630db7b96d902527a530245d"
+    },
+    "notebooks/02_modelos_validacion.ipynb": {
+      "bytes": 293268,
+      "sha256": "95abb4146c85fce1dbb8e65e6ac5adbc475fa58067fc7aca6ea426221e755d57"
+    },
+    "python/inferencia.py": {
+      "bytes": 2605,
+      "sha256": "ce33479925899b6d90ff46b3f6f503e69af4b0105c23967d71de2ddfdd9701ed"
+    },
+    "python/programar_tarea.bat": {
+      "bytes": 418,
+      "sha256": "4d5b557cf51469c38a5563b712292129e5cf782ce8c38ddb36fdc14564818e5f"
+    },
+    "app/streamlit_app.py": {
+      "bytes": 4304,
+      "sha256": "c57539131836080db6165370e8623434a88563bbf85dbde187df692c0157dbdc"
+    }
+  },
+  "notebooks_ejecutados": 2,
+  "pruebas_aprobadas": 7,
+  "tarea_windows": "dry-run verificado, no registrada",
+  "referencias": "guia/index.html#fuentes",
+  "validacion_html": "qa/browser/validacion_html.json",
+  "validacion_streamlit": "qa/browser/streamlit_validacion.json"
+}

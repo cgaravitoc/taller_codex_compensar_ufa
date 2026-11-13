@@ -1,0 +1,71 @@
+{
+  "modelo": "Boosting_15",
+  "umbral": 0.5298700904009722,
+  "validacion": {
+    "n": 33349,
+    "prevalencia": 0.2368586764220816,
+    "average_precision": 0.5853654471944233,
+    "roc_auc": 0.7980335005475563,
+    "precision": 0.5794602698650675,
+    "recall": 0.48930244334725914,
+    "f1": 0.5305786258494063,
+    "brier": 0.1467984072354318,
+    "tasa_alertas": 0.20000599718132478,
+    "matriz_confusion": [
+      [
+        22645,
+        2805
+      ],
+      [
+        4034,
+        3865
+      ]
+    ]
+  },
+  "prueba": {
+    "n": 16728,
+    "prevalencia": 0.23882113821138212,
+    "average_precision": 0.5978338617230446,
+    "roc_auc": 0.8009580026552864,
+    "precision": 0.5891291642314436,
+    "recall": 0.504630788485607,
+    "f1": 0.5436160172576513,
+    "brier": 0.14633005042757266,
+    "tasa_alertas": 0.20456719273075083,
+    "matriz_confusion": [
+      [
+        11327,
+        1406
+      ],
+      [
+        1979,
+        2016
+      ]
+    ]
+  },
+  "particiones": {
+    "entrenamiento": {
+      "filas": 59896,
+      "desde": "2026-01-01 00:05:46",
+      "hasta": "2026-03-29 14:22:30",
+      "ultima_etiqueta": "2026-03-31 23:54:02",
+      "prevalencia": 0.366585414718846
+    },
+    "validacion": {
+      "filas": 33349,
+      "desde": "2026-04-01 00:00:13",
+      "hasta": "2026-04-30 23:59:02",
+      "ultima_etiqueta": "2026-06-14 23:58:01",
+      "prevalencia": 0.2368586764220816
+    },
+    "prueba": {
+      "filas": 16728,
+      "desde": "2026-06-16 00:01:11",
+      "hasta": "2026-06-30 23:59:51",
+      "ultima_etiqueta": "2026-08-14 23:59:40",
+      "prevalencia": 0.23882113821138212
+    }
+  },
+  "importancia_muestra": 2000,
+  "importancia_repeticiones": 3
+}

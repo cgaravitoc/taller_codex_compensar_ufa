@@ -1,0 +1,80 @@
+[
+  {
+    "campo": "id_cliente",
+    "tipo": "str",
+    "descripcion": "Identificador ficticio del cliente y llave primaria.",
+    "dominio": "CLI00001..CLI05000"
+  },
+  {
+    "campo": "fecha_corte",
+    "tipo": "datetime64[us]",
+    "descripcion": "Fecha de referencia del perfil, disponible antes de las compras.",
+    "dominio": "2025-12-31"
+  },
+  {
+    "campo": "edad",
+    "tipo": "int64",
+    "descripcion": "Edad al corte.",
+    "dominio": "21..75 anos"
+  },
+  {
+    "campo": "genero",
+    "tipo": "str",
+    "descripcion": "Genero declarado sintetico; usar para auditoria de equidad, excluir del modelo base.",
+    "dominio": "F; M; No_informa"
+  },
+  {
+    "campo": "ciudad_residencia",
+    "tipo": "str",
+    "descripcion": "Ciudad habitual al corte.",
+    "dominio": "Bogota, Medellin, Cali, Barranquilla, Bucaramanga, Pereira"
+  },
+  {
+    "campo": "nivel_educativo",
+    "tipo": "str",
+    "descripcion": "Nivel educativo sintetico.",
+    "dominio": "Secundaria; Tecnico; Universitario; Posgrado"
+  },
+  {
+    "campo": "ocupacion",
+    "tipo": "str",
+    "descripcion": "Ocupacion al corte.",
+    "dominio": "Empleado; Independiente; Pensionado"
+  },
+  {
+    "campo": "ingreso_mensual_cop",
+    "tipo": "float64",
+    "descripcion": "Ingreso mensual declarado; faltantes intencionales MCAR del 3%.",
+    "dominio": "COP; positivo; vacio = desconocido"
+  },
+  {
+    "campo": "antiguedad_cliente_meses",
+    "tipo": "int64",
+    "descripcion": "Meses de vinculacion al corte.",
+    "dominio": "3..179"
+  },
+  {
+    "campo": "id_tarjeta",
+    "tipo": "str",
+    "descripcion": "Token ficticio, nunca un numero real de tarjeta. Una tarjeta por cliente.",
+    "dominio": "TAR00001..TAR05000"
+  },
+  {
+    "campo": "antiguedad_tarjeta_meses",
+    "tipo": "int64",
+    "descripcion": "Antiguedad de la unica tarjeta activa al corte.",
+    "dominio": "1..antiguedad_cliente_meses"
+  },
+  {
+    "campo": "cupo_tarjeta_cop",
+    "tipo": "float64",
+    "descripcion": "Cupo de referencia al corte; no es saldo disponible en cada compra.",
+    "dominio": "COP; 2000000..60000000"
+  },
+  {
+    "campo": "compras_internacionales_habilitadas",
+    "tipo": "int64",
+    "descripcion": "Permiso de compras internacionales, constante durante la simulacion.",
+    "dominio": "0=no; 1=si"
+  }
+]

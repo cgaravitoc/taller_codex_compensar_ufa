@@ -1,0 +1,9 @@
+{
+  "filas_entrada": 200000,
+  "filas_salida": 200000,
+  "montos_formato_local_recuperados": 2000,
+  "montos_invalidos_a_nulo": 4000,
+  "canales_normalizados": 2000,
+  "fechas_reconstruidas": 3000,
+  "horas_reconstruidas": 1000
+}

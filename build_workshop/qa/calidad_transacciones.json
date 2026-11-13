@@ -1,0 +1,36 @@
+{
+  "estado": "DEFECTOS_INTENCIONALES_VERIFICADOS_NO_APTO_PARA_MODELAR_SIN_LIMPIEZA",
+  "filas": 200000,
+  "columnas": 23,
+  "semilla_calidad": 20261114,
+  "conteos": {
+    "montos_no_numericos": 4000,
+    "montos_extremos_mayores_100_millones": 1000,
+    "montos_negativos": 500,
+    "montos_cero": 500,
+    "fechas_no_iso_validas": 3000,
+    "horas_invalidas": 1000,
+    "canales_fuera_catalogo": 2000,
+    "latencia_nulos": 170000,
+    "sdk_nulos": 190000,
+    "sistema_origen_mayoritario": 199000,
+    "reintento_valor_mayoritario": 199800
+  },
+  "porcentajes": {
+    "montos_no_numericos": 2.0,
+    "montos_extremos_mayores_100_millones": 0.5,
+    "montos_negativos": 0.25,
+    "montos_cero": 0.25,
+    "fechas_no_iso_validas": 1.5,
+    "horas_invalidas": 0.5,
+    "canales_fuera_catalogo": 1.0,
+    "latencia_nulos": 85.0,
+    "sdk_nulos": 95.0,
+    "sistema_origen_mayoritario": 99.5,
+    "reintento_valor_mayoritario": 99.9
+  },
+  "celdas_modificadas_en_columnas_existentes": 12000,
+  "filas_con_modificaciones_en_columnas_existentes": 11764,
+  "referencia_facilitador": "qa/facilitador/transacciones_original.parquet",
+  "nota": "Los controles de negocio originales se ejecutan sobre la referencia limpia. El crudo contiene los defectos listados."
+}

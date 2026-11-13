@@ -1,0 +1,56 @@
+[
+  {
+    "campo": "id_transaccion",
+    "tipo": "str",
+    "descripcion": "Compra seguida; una fila por compra, investigada o cerrada por ventana.",
+    "dominio": "FK transacciones.id_transaccion; PK"
+  },
+  {
+    "campo": "fue_investigada",
+    "tipo": "int64",
+    "descripcion": "Si hubo investigacion formal posterior a la compra.",
+    "dominio": "0=no; 1=si"
+  },
+  {
+    "campo": "estado_caso",
+    "tipo": "str",
+    "descripcion": "Resultado al corte de observacion.",
+    "dominio": "FRAUDE_CONFIRMADO; DESCARTADO; SIN_REPORTE_VENTANA_CERRADA"
+  },
+  {
+    "campo": "fecha_reporte",
+    "tipo": "datetime64[us]",
+    "descripcion": "Instante de apertura de investigacion; vacio si no hubo reporte.",
+    "dominio": "posterior a compra; nullable"
+  },
+  {
+    "campo": "fecha_cierre",
+    "tipo": "datetime64[us]",
+    "descripcion": "Resolucion de investigacion o fin de ventana de 45 dias.",
+    "dominio": "posterior a compra; <= corte"
+  },
+  {
+    "campo": "fecha_corte_observacion",
+    "tipo": "datetime64[us]",
+    "descripcion": "Fecha de consolidacion de etiquetas maduras para todas las compras.",
+    "dominio": "2026-08-15"
+  },
+  {
+    "campo": "es_fraude",
+    "tipo": "int8",
+    "descripcion": "Objetivo binario confirmado. Cero por descarte o cierre de ventana bajo supuesto de reporte completo en esta simulacion.",
+    "dominio": "0=legitima; 1=fraude; exactamente 50000 positivos"
+  },
+  {
+    "campo": "tipo_fraude",
+    "tipo": "str",
+    "descripcion": "Tipologia posterior de investigacion.",
+    "dominio": "Tarjeta_sustraida; Clonacion; Compra_no_presencial; Toma_de_cuenta; NO_APLICA"
+  },
+  {
+    "campo": "perdida_confirmada_cop",
+    "tipo": "float64",
+    "descripcion": "Perdida neta simulada despues de recuperaciones; nunca supera monto.",
+    "dominio": "COP >=0"
+  }
+]

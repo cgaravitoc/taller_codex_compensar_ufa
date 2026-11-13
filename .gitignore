@@ -1,0 +1,48 @@
+# Entornos virtuales de Python
+.venv/
+venv/
+env/
+
+# Cachés y archivos compilados
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Cobertura de pruebas
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Registros, temporales y capturas de revisión
+logs/
+*.log
+*.tmp
+*.temp
+~$*
+qa/browser/
+
+# Dependencias y construcción local
+node_modules/
+.python_deps/
+*.egg-info/
+
+# Credenciales y configuración privada
+.env
+.env.*
+!.env.example
+!.env.template
+.streamlit/secrets.toml
+
+# Archivos locales del sistema y del editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+
+# Los datos sintéticos, notebooks, modelos, reportes, guía y diccionarios
+# se conservan para distribuir y reproducir el taller.
